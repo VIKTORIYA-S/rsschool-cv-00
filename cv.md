@@ -85,3 +85,9 @@ checkForSpam("Get best sale offers now!");
 checkForSpam("Amazing SalE, only tonight!");
 
 ```
+
+
+## Languages:
+* Ukrainian - native
+* Russian - native
+* English - in progress
