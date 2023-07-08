@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Victoriia Suprun CV</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#About_Me">About Me</a></li>
+                    <li class="nav-item"><a href="#My_contacts">My contacts</a></li>
+                    <li class="nav-item"><a href="#Education">Education</a></li>
+                    <li class="nav-item"><a href="#Education">Work experience</a></li>
+                    <li class="nav-item"><a href="#Additional_education">Additional education</a></li>
+                    <li class="nav-item"><a href="#My_projects">My projects</a></li>
+                    <li class="nav-item"><a href="#Code_Example">Code Example</a></li>
+                    <li class="nav-item"><a href="#Languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main class="main">
+            <aside class="aside">
+                <figure class="figure">
+                    <img src="./img/my-photo.jpg" alt="photo Victoriia Suprun" width="300">
+                </figure>
+                <section>
+                    <hr>
+                    <hr>
+                    <h2 id="My_contacts">My contacts:</h2>
+                    <p>phone: +380(63)11-36-462</p>
+                    <p>email: v.suprun1961@gmail.com</p>
+                    <p>Telegram: @svictoria1961</p>
+                    <p>Viber: ВИКТОРИЯ</p>
+                </section>
+                <hr>
+                <hr>
+                <section>
+                    <h2 id="Additional_education">Additional education:</h2>
+                    <ol>
+                        <li>Courses in HTML, CSS and JavaScript.
+                            <ol>
+                                <li><a href="./img/front-end-javascript.jpg">(front-end-javascript.jpg)</a></li>
+                                <li><a href="./img/layout.png">(layout.png)</a>
+                                </li>
+                                <li><a href="./img/javascript.png">(javascript.png)</a></li>
+                            </ol>
+                        </li>
+                        <li>Programming courses for beginners.</li>
+                        <li>Web design courses.</li>
+                        <li>Digital design UX/UI.
+                            <ol>
+                                <li><a href="./img/digital-design.png">(digital-design.png)</a></li>
+                                <li><a href="./img/ux-ui-start.jpeg">(ux-ui-start.jpeg)</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </section>
+            </aside>
+            <section>
+                <div class="container">
+                    <h3>Front-End Developer</h3>
+                    <h1>Victoriia Suprun</h1>
+                    <h2 id="About_Me">About Me:</h2>
+                    <p>I work in a kindergarten as a music director and as an accompanist in the Palace of Children's Creativity.
+                    I am mastering new professions - Web developer and Web designer. I possess such qualities as responsibility, punctuality, attention, organization, conscientiousness, perseverance, striving for professional self-improvement.
+                    </p>
+                </div>
+                <div class="container">
+                    <h2 id="Education">Education and work experience:</h2>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Educational institution</th>
+                            <th>Place of work</th>
+                            <th>Job title</th>
+                            <th>Year</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Kharkov Mechanical College</td>
+                            <td>Machine building plant</td>
+                            <td>Technologist</td>
+                            <td>1978-1981</td>
+                        </tr>
+                        <tr>
+                            <td>Music College</td>
+                            <td>Kindergarten</td>
+                            <td>Musical director</td>
+                            <td>1981-1986</td>
+                        </tr>
+                        <tr>
+                            <td>Pedagogical University</td>
+                            <td>Kindergarten</td>
+                            <td>Musical director</td>
+                            <td>1987-2023</td>
+                        </tr>
+                        <tr>
+                            <td>Pedagogical University</td>
+                            <td>Palace of Children's Creativity</td>
+                            <td>Accompanist</td>
+                            <td>1990-2023</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <h2 id="My_projects">My projects:</h2>
+                    <ol>
+                        <li><a href="https://viktoriya-s.github.io/music/">[HTML5, CSS3, JavaScript:]</a></li>
+                        <li><a href="https://viktoriya-s.github.io/resume-new/">[HTML5, CSS3]</a></li>
+                        <li><a href="https://viktoriya-s.github.io/banderogys/">[HTML5, CSS3, JavaScript, UX/UI:]</a></li>
+                    </ol>
+                </div>
+                <div class="container">
+                    <h2 id="Code_Example">Code Example</h2>
+                    <h3>Description</h3>
+                    <p>The checkForSpam(message) function accepts a string (the message parameter), checks it for the content of the prohibited words spam and sale, and returns the result of the check. The words in the message parameter string can be in any case, for example SPAM or sAlE.
+                    </p>
+                    <p>If a forbidden word (spam or sale) is found, the function returns the boolean true.
+                    If there are no forbidden words in the string, the function returns boolean false.
+                    </p>
+                </div>
+                <h2>Сode:</h2>
+                <div class="container Сode-container">
+                    <pre>
+                        <code>
+                            function checkForSpam(message) {
+                            let result;
+                            const normalizedMessage = message.toLowerCase();
+                        if (normalizedMessage.includes("sale")) {
+                            result = true;
+                        } else if (normalizedMessage.includes("spam")) {
+                            result = true;
+                        } else {
+                            result = false;
+                        }
+                            console.log(result);
+                             return result;}
+                        </code>
+                    </pre>
+                    <pre>
+                        <code>
+                            checkForSpam("Latest technology news");
+                            checkForSpam("JavaScript weekly newsletter");
+                            checkForSpam("Get best sale offers now!");
+                            checkForSpam("Amazing SalE, only tonight!");
+                        </code>
+                    </pre>
+                    </div>
+                    <div class="container">
+                        <h2 id="Languages">Languages:</h2>
+                        <ul>
+                            <li>Ukrainian - native</li>
+                            <li>Russian - native</li>
+                            <li>English - in progress</li>
+                        </ul>
+                    </div>
+            </section>
+        </main>
+        <hr>
+        <footer class="footer">
+            <figure>
+                <img src="./img/rs_school_js.svg" alt="logo" width="100">
+                <a href="https://wearecommunity.io/events/js-stage0-rs-2023q2" class="logo">«JavaScript/Front-end. Stage 0»</a>
+            </figure>
+                <figure>
+                    <img src="./img/free-png.ru-688.png" alt="logo" width="150">
+                    <a href="https://github.com/rolling-scopes-school/viktoriya-s-JSFEPRESCHOOL2023Q2/invitations" class=" logo logo-git">GitHub 2022</a>
+                </figure>
+        </footer>
+    </div>
+</body>
+</html>
